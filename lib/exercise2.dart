@@ -8,6 +8,10 @@ class Students{
       print(person);
     }
   }
+
+  void sort(String field){
+    people.sort((a, b) => a[field]!.compareTo(b[field]!));
+  }
 }
 
 int calculate() {

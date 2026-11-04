@@ -25,5 +25,12 @@ void main(List<String> arguments) {
   .toList();
 
   final students = exercise2.Students(people);
+
+  print("Added the following students:"); 
+  students.output();
+
+  print("---------------------");
+  print("Sorted by first name:");
+  students.sort("first");
   students.output();
 }
