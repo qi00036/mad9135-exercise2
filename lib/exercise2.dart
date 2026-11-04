@@ -12,6 +12,10 @@ class Students{
   void sort(String field){
     people.sort((a, b) => a[field]!.compareTo(b[field]!));
   }
+
+  void plus(Map<String, String> person){
+    people.add(person);
+  }
 }
 
 int calculate() {

@@ -33,4 +33,17 @@ void main(List<String> arguments) {
   print("Sorted by first name:");
   students.sort("first");
   students.output();
+
+  students.plus({
+    "id": "f6a7b8c9-d0e1-4f23-efab-6789abcdef01",
+    "first": "Noah",
+    "last": "Thompson",
+    "email": "thompsonn@algonquincollege.com"
+  });
+  
+  print("---------------------");
+  print("Adding Noah Thompson:");
+  print("Sort by last name:");
+  students.sort("last");
+  students.output();
 }
