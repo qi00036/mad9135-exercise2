@@ -16,8 +16,13 @@ class Students{
   void plus(Map<String, String> person){
     people.add(person);
   }
+
+  void remove(String field, String value){
+    people.removeWhere((person) => person[field] == value);
+  }
 }
 
+//Kept it because the red colour in the test file is annoying as hell.
 int calculate() {
   return 6 * 7;
 }

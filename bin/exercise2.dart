@@ -46,4 +46,14 @@ void main(List<String> arguments) {
   print("Sort by last name:");
   students.sort("last");
   students.output();
+
+  students.remove("first", "Adesh");
+  students.remove("last", "Martin");
+
+  print("---------------------");
+  print("Removing person whose first name is Adesh");
+  print("Removing person whose last name is Martin");
+  print("Sort by email:");
+  students.sort("email");
+  students.output();
 }
